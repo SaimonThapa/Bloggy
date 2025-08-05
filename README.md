@@ -18,10 +18,11 @@ Nothing too fancy—just me practicing and figuring out the basics on my own. :)
 ## 🚀 Getting Started
 
 ### 1. Install dependencies
-### 2. Run local database
-
  ```bash
    npm install
+```
 
+### 2. Run local database
+ ```bash
 npx json-server -w data/db.json --port 3500 
 
