@@ -1,0 +1,88 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "First Title",
+      "time": "01/08/2025 - 11:22 PM",
+      "body": "Hello everyone this is my first blog"
+    },
+    {
+      "id": "2",
+      "title": "Second Title",
+      "time": "2025-08-01 - 11:22 PM",
+      "body": "This is my second blog post"
+    },
+    {
+      "id": "3",
+      "title": "3rd Blog",
+      "time": "2025-08-01 - 1:41 PM",
+      "body": "This is now connected to the database"
+    },
+    {
+      "id": "4",
+      "title": "AI generated posts from here",
+      "time": "2025-08-01 - 1:41 PM",
+      "body": "Populating the page with some fake posts to simulate 'blog' type blogs"
+    },
+    {
+      "id": "5",
+      "title": "Getting Started with React",
+      "time": "2025-08-01 10:15 AM",
+      "body": "React is a JavaScript library for building user interfaces. It's component-based and allows you to build reusable pieces of UI. In this post, I’ll walk you through how I got started and what helped me the most as a beginner."
+    },
+    {
+      "id": "6",
+      "title": "CRUD Operations in React Made Simple",
+      "time": "2025-08-02 3:45 PM",
+      "body": "CRUD stands for Create, Read, Update, and Delete. I implemented basic CRUD using state and some dummy data before moving on to real database integration. Handling updates and deletes with confirmation modals feels super smooth."
+    },
+    {
+      "id": "7",
+      "title": "React Router is a Game Changer",
+      "time": "2025-08-02 11:20 PM",
+      "body": "Navigating between pages without a full reload? Yes, please! React Router lets you build SPAs with dynamic routing, and it feels so natural. Nested routes and route params made this blog project way more powerful."
+    },
+    {
+      "id": "8",
+      "title": "What I Learned Using Tailwind CSS",
+      "time": "2025-08-02 1:30 PM",
+      "body": "Tailwind CSS is utility-first, which felt weird at first but now I love it. You don’t write custom CSS as much—just use classes. The learning curve is small, and it speeds up my dev time a lot."
+    },
+    {
+      "id": "9",
+      "title": "Next Steps After Finishing This Blog",
+      "time": "2025-08-02 6:00 PM",
+      "body": "Now that this blog is functional, I want to deploy it and maybe even connect authentication. Thinking of using Firebase or Clerk for that. Stay tuned—more features coming soon!"
+    },
+    {
+      "id": "10",
+      "title": "Why I Chose React over Vue",
+      "time": "2025-08-03 12:00 AM",
+      "body": "Vue is great, but React’s community and job market are what pulled me in. JSX also feels more intuitive to me after some practice. That said, I still plan to try Vue in another mini project soon."
+    },
+    {
+      "id": "11",
+      "title": "Styling Buttons That Don’t Suck",
+      "time": "2025-08-03 7:45 AM",
+      "body": "Buttons are small, but they matter. I spent some time styling the back and delete buttons to feel more modern. Rounded edges, hover effects, and spacing make a huge difference in UX."
+    },
+    {
+      "id": "12",
+      "title": "Learning Through Projects Is Underrated",
+      "time": "2025-08-04 1:30 PM",
+      "body": "Tutorials are great, but nothing beats building a full app. This blog project taught me more in a week than hours of videos. You run into real problems—and learn real solutions."
+    },
+    {
+      "id": "13",
+      "title": "Dark Mode? Not Yet, But Soon",
+      "time": "2025-08-05 2:22 PM",
+      "body": "I haven’t added dark mode yet, but Tailwind makes it easy with the `dark:` prefix. Once I’m done cleaning up the layout and routes, I’ll probably add it. Dark mode is honestly a must these days."
+    },
+    {
+      "id": "14",
+      "title": "How I Connected My Blog to a Database",
+      "time": "2025-08-05 9:00 PM",
+      "body": "For this project, I used a simple backend with Express and connected it to MongoDB. Fetching data using Axios and managing loading states in React was a key step to making the app feel real."
+    }
+  ]
+}
