@@ -87,6 +87,27 @@ mongoose
       console.log(`Server is running on port ${PORT}`);
     });
   })
-  .catch(() => {
-    console.log("Database Connection Unsuccessfull!!");
+  .catch((error) => {
+    console.error('❌ DATABASE CONNECTION FAILED')
+    console.error('━'.repeat(50))
+    console.error('ERROR: Unable to connect to MongoDB database')
+    console.error('REASON:', error.message)
+    console.error('━'.repeat(50))
+    console.error('TROUBLESHOOTING STEPS:')
+    console.error('1. Check if MONGO_URI is correctly set in your .env file')
+    console.error('2. Verify MongoDB Atlas connection string format')
+    console.error('3. Ensure your IP address is whitelisted in MongoDB Atlas')
+    console.error('4. Check if MongoDB service is running (if using local MongoDB)')
+    console.error('5. Verify your database username and password are correct')
+    console.error('━'.repeat(50))
+    console.error('Expected .env format:')
+    console.error('MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/databasename')
+    console.error('PORT=5000')
+    console.error('━'.repeat(50))
+    console.error("FALLING BACK TO SAMPLE DATA")
+    console.error("FRONTEND RUNNING ON: http://localhost:5173/")
+
+    
+    // Exit the process since we can't run without database
+    process.exit(1)  
   });
