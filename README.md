@@ -39,14 +39,11 @@ npm install
 ```
 This will install dependencies for both /backend and /frontend.
 
-### ⁉️Quick Start without MongoDB (Optional)
+### ⁉️Quick Start without MongoDB
 
-If you don’t want to set up MongoDB, you can Skip 3️⃣!!run the app using your fallback JSON file with json-server:
-```bash
-npx json-server --watch frontend/data/db.json --routes frontend/data/routes.json --port 3000
-```
+If you don’t want to set up MongoDB, you can Skip 3️⃣!! The will run app using a fallback data.
 
-### 3️⃣ Setup environment variables to run mongoDB & Express server(Preffered)
+### 3️⃣ Setup environment variables to run mongoDB & Express server
 To run the server with the backend, before running the server, create a .env file inside the /backend folder:
 ```env
 MONGO_URI=your_mongodb_connection_string
