@@ -39,9 +39,14 @@ npm install
 ```
 This will install dependencies for both /backend and /frontend.
 
-⁉️Note: If you just want to see how the website looks and works without loading the backend/database. Skip to 4️⃣!! the server will show sample data instead.
+### ⁉️Quick Start without MongoDB (Optional)
 
-### 3️⃣ Setup environment variables
+If you don’t want to set up MongoDB, you can Skip 3️⃣!!run the app using your fallback JSON file with json-server:
+```bash
+npx json-server --watch frontend/data/db.json --routes frontend/data/routes.json --port 3000
+```
+
+### 3️⃣ Setup environment variables to run mongoDB & Express server(Preffered)
 To run the server with the backend, before running the server, create a .env file inside the /backend folder:
 ```env
 MONGO_URI=your_mongodb_connection_string
@@ -67,15 +72,17 @@ http://localhost:5173
 ## 📂 Project Structure
 ```bash
 bloggy/
-├── backend/          # Express API + MongoDB models
-│   |── .env          # Backend environment variables
-│   ├── models/       # Mongoose schemas
-│   |── server.js     # App entry point
-│   └── package.json
-├── frontend/         # React + Tailwind SPA
-│   ├── src/          # Components & pages
-│   ├── vite.config.js
-│   ├── index.html
-│   └── package.json
-└── package.json      # Root scripts (install, dev)
+├── backend/              # Express API + MongoDB models
+│   ├── models/           # Mongoose schemas
+│   ├── server.js         # App entry point
+│   ├── package.json      # Backend dependencies & scripts
+│   └── .env              # MongoDB URI, PORT
+├── frontend/             # React + Tailwind SPA
+│   ├── data/             # Fallback JSON data (db.json)
+│   ├── src/              # Components & pages
+│   ├── public/           # Static assets
+│   ├── vite.config.js    # Vite config
+│   ├── index.html        # HTML entry
+│   └── package.json      # Frontend dependencies & scripts
+└── package.json          # Root scripts (install,dev)
 ```
