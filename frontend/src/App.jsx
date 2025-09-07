@@ -16,7 +16,6 @@ const App = () => {
   const staticPosts = [
     {
       id: 1,
-      title: "First Title",
       time: "01/08/2025 - 11:22 PM",
       body: "Hello everyone this is my first blog"
     },
@@ -107,7 +106,6 @@ const App = () => {
   const [postBody, setPostBody] = useState("")
   const navigate = useNavigate()
 
-
   useEffect(()=>{
     const fetchPosts = async() =>{
     try {
@@ -117,7 +115,7 @@ const App = () => {
       }
       const retrivedPosts = await response.json()
       setPosts(retrivedPosts)
-      
+      console.log(retrivedPosts);
     } catch (error) {
       console.log(error.message)
     }
@@ -177,7 +175,7 @@ const App = () => {
         }>
           {/* Nested routes inside PageLayout */}
           <Route index element={
-            <Home posts={posts.filter((post)=>post.title.toLowerCase().includes(search.toLowerCase())).reverse()} />
+            <Home posts={posts.filter((post)=>post.title?.toLowerCase().includes(search.toLowerCase())).reverse()} />
           } />
           
           <Route path="post" element={
